@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export const ContactForm = ({ addContact }) => {
   const initialState = { name: '', number: '' };
-  const [state, setState] = useState({ ...initialState });
+  const [state, setState] = useState(initialState);
 
   const handleInputChange = event => {
     const { name, value } = event.target;
